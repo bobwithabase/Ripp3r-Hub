@@ -9,6 +9,15 @@ local Tab = Window:MakeTab({
 	PremiumOnly = false
 })
 
+Tab:AddTextbox({
+	Name = "Enter Key",
+	Default = "Enter Key",
+	TextDisappear = true,
+	Callback = function(Value)
+		print(Value)
+	end	  
+})
+
 local Window = OrionLib:MakeWindow({Name = "Ripp3r-hub ┃ ".. scriptver, HidePremium = false, SaveConfig = true, ConfigFolder = "Ripp3r", IntroText = "Ripp3r-Hub", IntroIcon = "https://i.e-z.host/nbo558hv.png"})
 
 local Tab = Window:MakeTab({
