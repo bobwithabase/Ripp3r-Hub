@@ -515,3 +515,5 @@ local Tab = Window:MakeTab({
 	Icon = "rbxassetid://",
 	PremiumOnly = false
 })
+Tab:AddLabel("Daddy Ripp3r#0001 - owner/coder")
+Tab:AddLabel("kermit the frog#6253 - cool guy")
