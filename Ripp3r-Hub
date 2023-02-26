@@ -109,6 +109,19 @@ Tab:AddButton({
   	end    
 })
 
+Tab:AddToggle({
+	Name = "This is a toggle!",
+	Default = false,
+	Callback = function(Value)
+		local lighting = game:GetService("Lighting")
+
+wait(5)
+
+lighting.ClockTime = 2
+	end    
+})
+
+
 
 
 local Tab = Window:MakeTab({
