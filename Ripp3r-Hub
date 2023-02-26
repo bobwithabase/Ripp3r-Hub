@@ -110,6 +110,7 @@ Tab:AddButton({
 })
 
 
+
 local Tab = Window:MakeTab({
 	Name = "World",
 	Icon = "rbxassetid://",
@@ -117,7 +118,7 @@ local Tab = Window:MakeTab({
 })
 
 local Section = Tab:AddSection({
-	Name = "world options"
+	Name = "Sky options"
 })
 
 
@@ -496,20 +497,6 @@ end
 end)
 
 local Tab = Window:MakeTab({
-	Name = "Credits",
-	Icon = "rbxassetid://",
-	PremiumOnly = false
-})
-Tab:AddLabel("Daddy Ripp3r#0001 - owner/coder")
-Tab:AddLabel("kermit the frog#6253 - cool guy")
-Tab:AddButton({
-	Name = "Click me for discord link",
-	Callback = function()
-      		setclipboard("https://discord.gg/EqCXqdAYPu")
-  	end    
-})
-
-local Tab = Window:MakeTab({
 	Name = "Gui-Settings",
 	Icon = "rbxassetid://",
 	PremiumOnly = false
@@ -517,9 +504,16 @@ local Tab = Window:MakeTab({
 
 Tab:AddColorpicker({
 	Name = "Colorpicker",
-	Default = Color3.fromRGB(45, 32, 230),
+	Default = Color3.fromRGB(255, 0, 0),
 	Callback = function(Value)
-		
+		print(Value)
 	end	  
 })
 
+local Tab = Window:MakeTab({
+	Name = "Credits",
+	Icon = "rbxassetid://",
+	PremiumOnly = false
+})
+Tab:AddLabel("Daddy Ripp3r#0001 - owner/coder")
+Tab:AddLabel("kermit the frog#6253 - cool guy")
