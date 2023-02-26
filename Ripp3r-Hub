@@ -113,6 +113,7 @@ Tab:AddToggle({
 	Name = "This is a toggle!",
 	Default = false,
 	Callback = function(Value)
+	 if value == true then
 		local lighting = game:GetService("Lighting")
 
 wait(5)
