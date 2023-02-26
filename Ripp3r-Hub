@@ -4,20 +4,10 @@ local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shl
 
 local Window = OrionLib:MakeWindow({Name = "Key", HidePremium = false, SaveConfig = true, IntroText = "Ripp3r-Hub Key"})
 
-local Tab = Window:MakeTab({
-	Name = "Enter Key",
-	PremiumOnly = false
-})
+_G.Key = "Psnemmsns"
+_G.KeyInput = "string"
 
-Tab:AddTextbox({
-	Name = "Enter Key",
-	Default = "Enter Key",
-	TextDisappear = true,
-	Callback = function(Value)
-		print(Value)
-	end	  
-})
-
+function MakeScriptHub()
 local Window = OrionLib:MakeWindow({Name = "Ripp3r-hub ┃ ".. scriptver, HidePremium = false, SaveConfig = true, ConfigFolder = "Ripp3r", IntroText = "Ripp3r-Hub", IntroIcon = "https://i.e-z.host/nbo558hv.png"})
 
 local Tab = Window:MakeTab({
@@ -531,4 +521,37 @@ local Tab = Window:MakeTab({
 	Name = "Credits",
 	Icon = "rbxassetid://",
 	PremiumOnly = false
+})
+end
+
+function CorrectKeyNotification
+OrionLib:MakeNotification({
+	Name = "Correct-Key!!",
+	Content = "You have entered the correct key??",
+	Time = 5
+})
+end
+
+local Tab = Window:MakeTab({
+	Name = "Enter Key",
+	PremiumOnly = false
+})
+
+Tab:AddTextbox({
+	Name = "Enter Key",
+	Default = "Enter Key",
+	TextDisappear = true,
+	Callback = function(Value)
+		_G.KeyInput = "Value"
+	end	  
+})
+
+Tab:AddButton({
+	Name = "Check-Key",
+	Callback = function()
+      		if _G.KeyInput == _G.Key then
+		MakeScriptHub()
+		CorrectKeyNotification()
+		end
+  	end    
 })
