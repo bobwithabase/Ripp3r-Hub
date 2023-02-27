@@ -51,6 +51,20 @@ Tab:AddSlider({
 })
 
 
+Section:NewToggle("Enable Fly", "Fly Around", function(state)
+    if state then
+        print("Toggle On")
+    else
+        print("Toggle Off")
+    end
+end)
+Tab:AddSlider({
+    Name: = "Fly Speed"
+    Min = 50
+    Max = 300
+    Default = 50
+    
+
 
 
 function toggleNoClip()
