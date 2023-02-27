@@ -496,11 +496,6 @@ scr.selectionMade();
 end
 end)
 
-local Tab = Window:MakeTab({
-	Name = "Gui-Settings",
-	Icon = "rbxassetid://",
-	PremiumOnly = false
-})
 
 local Tab = Window:MakeTab({
 	Name = "Gui-Settings",
