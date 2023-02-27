@@ -49,7 +49,7 @@ Tab:AddSlider({
         Humanoid.JumpPower = _G.JP
     end    
 })
-    
+
 
 
 
