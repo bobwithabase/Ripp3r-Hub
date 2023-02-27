@@ -510,7 +510,6 @@ Tab:AddColorpicker({
 	end	  
 })
 
-
 local Tab = Window:MakeTab({
 	Name = "Credits",
 	Icon = "rbxassetid://",
