@@ -503,6 +503,21 @@ local Tab = Window:MakeTab({
 })
 
 local Tab = Window:MakeTab({
+	Name = "Gui-Settings",
+	Icon = "rbxassetid://",
+	PremiumOnly = false
+})
+
+Tab:AddColorpicker({
+	Name = "Colorpicker",
+	Default = Color3.fromRGB(255, 0, 0),
+	Callback = function(Value)
+		print(Value)
+	end	  
+})
+
+
+local Tab = Window:MakeTab({
 	Name = "Credits",
 	Icon = "rbxassetid://",
 	PremiumOnly = false
