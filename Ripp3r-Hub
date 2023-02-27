@@ -1,6 +1,6 @@
 local scriptver = "v1.0"
 
-local OrionLib = loadstring(game:HttpGet("https://raw.githubusercontent.com/deeeity/mercury-lib/master/src.lua"))()
+local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
 local Window = OrionLib:MakeWindow({Name = "Ripp3r-hub ┃ ".. scriptver, HidePremium = true, SaveConfig = true, ConfigFolder = "Ripp3r", IntroText = "Ripp3r-Hub", IntroIcon = "https://i.e-z.host/nbo558hv.png"})
 
 local Tab = Window:MakeTab({
