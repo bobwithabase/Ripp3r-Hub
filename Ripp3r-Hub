@@ -197,6 +197,8 @@ Tab:AddTextbox({
 	end	  
 })
 
+Tab:AddLabel("Always time your base three times before attempting to dupe")
+
 
 
 local Section = Tab:AddSection({
