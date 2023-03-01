@@ -3,6 +3,13 @@ local scriptver = "BETA"
 local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
 local Window = OrionLib:MakeWindow({Name = "Ripp3rs-hub ┃ ".. scriptver, HidePremium = true, SaveConfig = true, ConfigFolder = "Ripp3r", IntroText = "Ripp3r-Hub", IntroIcon = "https://i.e-z.host/nbo558hv.png"})
 
+GUI:Notification{
+	Title = "Remember to join the discord",
+	Text = "https://discord.gg/EqCXqdAYPu",
+	Duration = 15,
+	Callback = function() end
+}
+
 local Tab = Window:MakeTab({
     Name = "Player",
     Icon = "rbxassetid://",
