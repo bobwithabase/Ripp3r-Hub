@@ -197,8 +197,6 @@ Tab:AddTextbox({
 	end	  
 })
 
-Tab:AddLabel("Always time your base three times before attempting to dupe")
-
 
 
 local Section = Tab:AddSection({
@@ -497,6 +495,23 @@ wait(0.3)
 scr.selectionMade();                       
 end
 end)
+
+local Tab = Window:MakeTab({
+    Name = "Other Dupes",
+    Icon = "rbxassetid://",
+    PremiumOnly = false
+})
+
+Tab:AddLabel("Axe Dupe coming soon")
+
+
+local Tab = Window:MakeTab({
+    Name = "Teleports",
+    Icon = "rbxassetid://",
+    PremiumOnly = false
+})
+
+Tab:AddLabel("Coming Soon")
 
 local Tab = Window:MakeTab({
 	Name = "Gui-Settings",
